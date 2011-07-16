@@ -1,0 +1,77 @@
+<div class="wrapper"> 
+  <h1>Peekaboo</h1> 
+  <div class="callout"> 
+    <div class="perimeter"> 
+      <div class="device"> 
+        <div class="highlight"> 
+           <div class="face">	
+            <div class="face_glare"></div> 
+	          <div class="display"> 
+                <div class="top_bar"> 
+                  <div class="battery"><div class="body"><span></span></div><div class="contact"></div></div> 
+                  <div class="signal"><div class="one"></div><div class="two"></div><div class="three"></div><div class="four"></div><div class="five"></div></div> 
+                  <p class="carrier">Baby Network<span></span></p> 
+                  <p class="time"><script type="text/javascript">
+<!--
+var currentTime = new Date();
+var hours = currentTime.getHours();
+var minutes = currentTime.getMinutes();
+
+if (hours > 12) {
+hours = hours - 12;
+}
+
+if (hours < 10){
+hours = "0" + hours;
+} 
+
+if (minutes < 10){
+minutes = "0" + minutes;
+}
+
+document.write(hours + ":" + minutes );
+
+if(hours > 11){
+document.write(" PM")
+} else {
+document.write(" AM")
+}
+//-->
+</script></p> 
+                </div> 
+                <div class="application_title"> 
+                  <h5>Peekaboo</h5> 
+                  <span class="button left">Edit</span> 
+                  <span class="button right large">+</span> 
+                </div> 
+				<div class="leftcol">
+                <div class="bar bar1"> 
+  	              <div> 
+  	                <img src="images1.jpg" height="200px" width="180px" />
+  	              </div> 
+                </div> 
+				</div> 
+				<div class="rightcol">
+                <div class="bar bar2"> 
+  	              <div> 
+  	                <img src="images1.jpg" height="200px" width="180px" />
+  	              </div> 
+                 </div> 
+		         <div class="bar bar3"> 
+  	               <div> 
+  	                <img src="images1.jpg" height="200px" width="180px" />
+  	               </div> 
+                </div> 
+				</div> 
+		        <div class="tab_bar"> 
+		          
+		        </div> 
+              </div> 
+              <div class="home_button"><div></div></div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div><!--callout--> 
+    
+  </div> 

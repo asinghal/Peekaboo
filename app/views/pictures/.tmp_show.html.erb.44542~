@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @picture.name %>
+</p>
+
+<p>
+  <b>Small img:</b>
+  <%= @picture.small_img %>
+</p>
+
+<p>
+  <b>Video:</b>
+  <%= @picture.video %>
+</p>
+
+<p>
+  <b>Audio:</b>
+  <%= @picture.audio %>
+</p>
+
+
+<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path %>
