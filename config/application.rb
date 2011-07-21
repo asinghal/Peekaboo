@@ -36,6 +36,12 @@ module Peekaboo
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
+    # assign the default test framework as rspec
+    config.generators do |g|
+      g.test_framework = :rspec
+      g.fixture_replacement = :factory_girl
+    end
+    
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
   end
