@@ -29,9 +29,12 @@ describe PicturesController do
 
   describe "GET index" do
     it "assigns all pictures as @pictures" do
+      Picture.delete_all
       picture = Picture.create! valid_attributes
       get :index
       assigns(:pictures).should eq([picture])
+      assigns(:correct_id).should == picture.id
+      assigns(:picture_name).should == picture.name
     end
   end
 
@@ -39,6 +42,14 @@ describe PicturesController do
     it "assigns the requested picture as @picture" do
       picture = Picture.create! valid_attributes
       get :show, :id => picture.id.to_s
+      assigns(:picture).should eq(picture)
+    end
+  end
+
+  describe "play" do
+    it "validates the clicked picture as @picture" do
+      picture = Picture.create! valid_attributes
+      get :play, :correctid => picture.id.to_s, :id => picture.id.to_s
       assigns(:picture).should eq(picture)
     end
   end
