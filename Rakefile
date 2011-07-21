@@ -5,14 +5,14 @@ require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
 
-module ::Peekaboo
-  class Application
-    include Rake::DSL
-  end
-end
-
-module ::RakeFileUtils
-  extend Rake::FileUtilsExt
-end
+#module ::Peekaboo
+#  class Application
+#    include Rake::DSL
+#  end
+#end
+#
+#module ::RakeFileUtils
+#  extend Rake::FileUtilsExt
+#end
 
 Peekaboo::Application.load_tasks
