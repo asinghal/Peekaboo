@@ -30,7 +30,7 @@ describe "pictures/index.html.erb" do
   it "renders a list of pictures" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "img", :count => 3
+    assert_select "img", :count => 4
     # Run the generator again with the --webrat flag if you want to use webrat matchers
 #    assert_select "tr>td", :text => "Small Img".to_s, :count => 2
     # Run the generator again with the --webrat flag if you want to use webrat matchers
