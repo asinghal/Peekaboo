@@ -1,25 +1,27 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
-  <%= @picture.name %>
+  <h1><%= @picture.name %></h1>
 </p>
 
 <p>
-  <b>Small img:</b>
-  <%= @picture.small_img %>
+  <img src="<%= @picture.small_img %>" alt="<%= @picture.name %>"/>
 </p>
 
+<% if @picture.video %>
 <p>
   <b>Video:</b>
   <%= @picture.video %>
 </p>
+<% end %>
 
-<p>
-  <b>Audio:</b>
-  <%= @picture.audio %>
-</p>
+<% if @picture.audio %>
+<audio controls="controls" autoplay="autoplay">
+  <source src="<%= @picture.audio %>" type="audio/wav" />
+  Your browser does not support the audio element.
+</audio>
+<% end %>
 
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path %>
+<a href="<%= pictures_path %>"><img src="/images/reload.png" height="50px" width="50px" ></a>

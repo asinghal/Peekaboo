@@ -1,5 +1,6 @@
 <div class="wrapper"> 
   <h1>Peekaboo</h1> 
+  <h1> Where is the <%= @picture_name %> ? </h1>
   <div class="callout"> 
     <div class="perimeter"> 
       <div class="device"> 
@@ -47,19 +48,19 @@ document.write(" AM")
 				<div class="leftcol">
                 <div class="bar bar1"> 
   	              <div> 
-  	                <a href="#"><img src="images/Rails.png" height="200px" width="180px" /></a>
+  	                <a href="/play/<%=@correct_id%>/<%= @pictures[0].id %>"><img src="<%= @pictures[0].small_img %>" height="200px" width="180px" /></a>
   	              </div> 
                 </div> 
 				</div> 
 				<div class="rightcol">
                 <div class="bar bar2"> 
   	              <div> 
-  	                <a href="#"><img src="images/Rails.png" height="200px" width="180px" /></a>
+  	                <a href="/play/<%=@correct_id%>/<%= @pictures[1].id %>"><img src="<%= @pictures[1].small_img %>" height="200px" width="180px" /></a>
   	              </div> 
                  </div> 
 		         <div class="bar bar3"> 
   	               <div> 
-  	                <a href="#"><img src="images/Rails.png" height="200px" width="180px" /></a>
+  	                <a href="/play/<%=@correct_id%>/<%= @pictures[2].id %>"><img src="<%= @pictures[2].small_img %>" height="200px" width="180px" /></a>
   	               </div> 
                 </div> 
 				</div> 
