@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <h1><%= @picture.name %></h1>
+  <h1>Very good! This is the <%= @picture.name %></h1>
 </p>
 
 <p>
@@ -22,6 +22,4 @@
 </audio>
 <% end %>
 
-
-<%= link_to 'Edit', edit_picture_path(@picture) %> |
 <a href="<%= pictures_path %>"><img src="/images/reload.png" alt="replay" height="50px" width="50px" ></a>
