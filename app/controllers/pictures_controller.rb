@@ -3,6 +3,7 @@ class PicturesController < ApplicationController
   # GET /pictures.xml
   def index
     @pictures = Picture.pickRandom
+    @track = true
     
     picture = @pictures[rand(@pictures.size)]
     
