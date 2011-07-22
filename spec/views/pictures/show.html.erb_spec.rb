@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe "pictures/show.html.erb" do
   before(:each) do
+    @message = assign(:message, "Good")
     @picture = assign(:picture, stub_model(Picture,
       :name => "Name",
       :small_img => "Small Img",

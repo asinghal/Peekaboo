@@ -6,7 +6,7 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
   
-  <% if RAILS_ENV == 'production' and @track %>
+  <% if ::Rails.env == 'production' and @track %>
   <script type="text/javascript">
 
   var _gaq = _gaq || [];

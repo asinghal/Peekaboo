@@ -19,19 +19,18 @@ class PicturesController < ApplicationController
   # GET /pictures/1
   # GET /pictures/1.xml
   def play
-    @picture = Picture.find(params[:id])
+    @picture = Picture.find(params[:correctid])
     
     if params[:correctid] == params[:id]
-      respond_to do |format|
+      @message = "Very good!"
+    else
+      @message = "No... "
+    end
+    
+    respond_to do |format|
         format.html { render :action => "show" }
         format.xml  { render :xml => @picture }
       end
-    else
-      respond_to do |format|
-        format.html { redirect_to(pictures_url) }
-        format.xml  { head :ok }
-      end
-    end
     
   end
   
