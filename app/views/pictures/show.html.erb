@@ -1,25 +1,81 @@
-<p id="notice"><%= notice %></p>
+<div class="wrapper"> 
+  <h1>Peekaboo</h1> 
+  <h1><%= @message %> This is the <%= @picture.name %> <a href="<%= pictures_path %>"><img src="/images/reload.png" height="30px" width="30px" ></a></h1>
+  <div class="callout"> 
+    <div class="perimeter"> 
+      <div class="device"> 
+        <div class="highlight"> 
+           <div class="face">	
+            <!-- div class="face_glare"></div --> 
+	          <div class="display"> 
+                <div class="top_bar"> 
+                  <div class="battery"><div class="body"><span></span></div><div class="contact"></div></div> 
+                  <div class="signal"><div class="one"></div><div class="two"></div><div class="three"></div><div class="four"></div><div class="five"></div></div> 
+                  <p class="carrier">Baby Network<span></span></p> 
+                  <p class="time"><script type="text/javascript">
+<!--
+var currentTime = new Date();
+var hours = currentTime.getHours();
+var hours24 = hours;
+var minutes = currentTime.getMinutes();
 
-<p>
-  <h1><%= @message %> This is the <%= @picture.name %></h1>
-</p>
+if (hours > 12) {
+hours = hours - 12;
+}
 
-<p>
-  <img src="<%= @picture.small_img %>" alt="<%= @picture.name %>"/>
-</p>
+if (hours < 10){
+hours = "0" + hours;
+} 
 
-<% if @picture.video %>
-<p>
-  <b>Video:</b>
-  <%= @picture.video %>
-</p>
-<% end %>
+if (minutes < 10){
+minutes = "0" + minutes;
+}
 
-<% if @picture.audio %>
-<audio controls="controls" autoplay="autoplay">
-  <source src="<%= @picture.audio %>" type="audio/wav" />
-  Your browser does not support the audio element.
-</audio>
-<% end %>
+document.write(hours + ":" + minutes );
 
-<a href="<%= pictures_path %>"><img src="/images/reload.png" alt="replay" height="50px" width="50px" ></a>
+if(hours24 > 11){
+document.write(" PM")
+} else {
+document.write(" AM")
+}
+//-->
+</script></p> 
+                </div> 
+                <div class="application_title"> 
+                  <h5>Peekaboo</h5> 
+                  <span class="button left">Edit</span> 
+                  <a href="<%=new_picture_path%>"><span class="button right large">+</span></a>
+                </div> 
+				<div >
+                <div class="bar centerBar"> 
+  	              <div> 
+  	                <img src="<%= @picture.small_img %>" alt="<%= @picture.name %>" height="300px" width="270px"  /><br/>
+					<% if @picture.video %>
+					<p>
+					  <b>Video:</b>
+					  <%= @picture.video %>
+					</p>
+					<% end %>
+					
+					<% if @picture.audio %>
+					<audio controls="controls" autoplay="autoplay">
+					  <source src="<%= @picture.audio %>" type="audio/wav" />
+					  Your browser does not support the audio element.
+					</audio>
+					<% end %>
+  	              </div> 
+                </div> 
+				</div> 
+				
+		        <div class="tab_bar"> 
+		          
+		        </div> 
+              </div> 
+              <div class="home_button_results_page"><div></div></div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div><!--callout--> 
+    
+  </div> 
