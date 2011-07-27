@@ -1,1 +1,16 @@
-This is a test project strictly meant for my own expertimental purposes. 
+NB: This is a test project strictly meant for my own expertimental purposes. 
+
+This is a game that can be played with babies. It is deployed it at http://peekaboo.heroku.com/ 
+
+The game is simple: it presents three images and asks the baby to identify one of them. (The parent will have to read the question to the baby). If the baby answers correctly, the game congratulates the user (in some cases, sounds are played too!). Otherwise, the correct picture is shown.
+
+It is meant to be a learning tool for very young children ( perhaps 18 months to 3 years of age).
+
+Any feedback/ suggestions would be great and most appreciated. 
+
+The images have been taken from the internet solely for this application's non commercial usage.
+
+
+INSTALLATION: 
+
+Checkout the code from github, install rails and just start the server! Its a self contained application and has no external dependencies at all.
